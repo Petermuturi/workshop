@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+</head>
+<style type="text/css">
+    body{
+        width:200px;
+        color: white;
+        height: 200px;
+        text-align: center;
+        margin-bottom:-100px;
+        background-color: red;
+        position: relative;
+        -webkit-animation-name:colors;
+        -webkit-animation-duration:4s;
+        -webkit-animation-iteration-count:infinite;
+        -webkit-animation-direction:alternate;
+    }
+    @-webkit-keyframes colors{
+        0%{background-color: red;left:0px; top:0px;}
+        25%{background-color: blue;left:0px;top:300px; }
+        50%{background-color: orange;left:300px; top:300px;border-radius:100px;}
+        75%{background-color: purple;left:300px; top:0px;}
+        100%{background-color: red;left: 0px; top:0px;width: 400px; height: 200px;}
+    }
+</style>
+<body>
+<div></div>
+</body>
+</html>
